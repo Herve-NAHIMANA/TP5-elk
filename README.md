@@ -12,6 +12,7 @@ Les fichiers présents dans ce dépôt, permettra de déployer la solution dans 
 Le dépôt est composé d':
 
 - Un dossier **Elasticsearch** qui permet de déployer elasticsearch
+- Un dossier imgs qui contient les images
 - Un dossier **nginx** pour le déploiement du serveur nginx
 - Un fichier **fleet.yaml** pour le déploiement de kibana,fleet.
 - Un fichier **deploymnent.sh** qui lancera automatiquement toutes les commandes afin d'avoir un environnement prêt et fonctionnel
