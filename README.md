@@ -31,3 +31,17 @@ Le dépôt est composé d':
 - se place dans le dossier **tp5-elk** avec ``cd tp5-elk``
 - lance avec la commande ``sh deployment.sh`` le fichier de déploiement.
 - Lancez la commande ``kubectl get secret elasticsearch-quickstart-es-elastic-user -o=jsonpath='{.data.elastic}' | base64 --decode; echo`` pour récupérer le mot de passer de kibana afin d'accéder à l'interface graphique de kibana.
+- Ajout de l'Agent de collecte des logs pour nginx: 
+    - Aller dans Management
+    - Integration policies
+    - Dans la barre de recherche, taper nginx
+    - Cliquez sur nginx et Add nginx
+    - Dans 'Where to add this integration': cliquez sur l'onglet 'Existing hosts' et sélectionner 'Elastic Agent on ECK policy'
+    - Cliquez sur Sauvegarder et continuer
+    -   Allez dans Discover
+    - Dans la barre de recherche, taper nginx
+
+
+
+
+![](imgs/logsnginx.PNG)
